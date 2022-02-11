@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../static/fonts/Gilroy-ExtraBold.otf");
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../static/fonts/Gilroy-Light.otf");
+}
+@font-face {
+    font-family: "Ogg";
+    src: url("../static/fonts/Ogg\ Roman.ttf");
+}
+@font-face {
+    font-family: "Shaloems";
+    src: url("../static/fonts/Shaloems.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3ECE4;
+    border: 1px solid #F3ECE4;
+    text-align: center;
+    font-family: "Ogg";
+    overflow: hidden;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 30px;
+    font-family: "Gilroy";
+}
+
+#nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#nav a:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;  
+    
+}
+
+#back>h1{
+  margin: 0 auto;
+  font-weight: 500;
+  margin-top: 50px;
+  line-height: 28px;
+  width: 25%;
+}
+
+#back>h1 span{
+    font-family: "Shaloems";
+    font-size: 55px;
+}
+
+#imgs{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+
+.small{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 12%;
+    height: 40vh;
+    overflow: hidden;
+}
+.small img{
+    height: 100%;
+
+}
+
+.medium{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 18%;
+    height: 55vh;
+    overflow: hidden;
+
+}
+
+.medium video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.large{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: inherit;
+    z-index: 999;
+    overflow: hidden;  
+}
+
+.large video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+
+#l1{
+    left: 2%;
+
+}
+
+#r1{
+    right: 2%;
+}
+
+#l2{
+    left: 13%;
+}
+
+#r2{
+    right: 13%;
+    z-index: 1;
+}
+
+#back2{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3ECE4;
+    font-family: "Ogg";
+    padding: 30px 50px;
+}
+
+#back2 h1{
+    opacity: 0;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#heading{
+    text-align: center;
+}
+
+#heading h2{
+   opacity: 0;
+   font-size: 40px;
+   font-weight: 100;
+   margin: 0 auto;
+}
+
+#heading #line{
+    width: 100%;
+    height: 2px;
+    background-color: goldenrod;
+    margin: 0 auto;
+}
+
+#back2content{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+}
+
+#lft2{
+    position: relative;
+    width: 50%;
+    height: inherit;
+}
+
+#lft2p{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    font-family: "Gilroy";
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#lft2p p:nth-child(2){
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(165, 125, 22);
+    margin-top: 70px;
+}
+
+#rght2{
+    position: relative;
+    width: 50%;
+    height: inherit;
+    /* background-color: khaki; */
+}
+
+#rght2 #ellipse{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#ellipse img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(2);
+    height: 100%;
+}
+
+#back3{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3ECE4;
+    padding: 0 50px;
+    font-family: "Ogg";
+}
+
+#back3lft{
+    width: 40%;
+    min-height: inherit;
+    /* background-color: black; */
+
+}
+
+#back3rght{
+    width: 60%;
+    min-height: inherit;
+    padding: 50px;
+
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-top: -1px;
+    /* background-color: grey; */
+}
+
+.row .contents{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.row .contents h1{
+    color: rgb(182, 140, 35);
+}
+
+.row .contents p{
+    font-size: 14px;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(182, 140, 35);
+    border-bottom: 1px solid rgb(182, 140, 35);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.row:hover .border{
+    transform: rotate(3deg);
+}
+
+#back3rght a{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+#back3lft #rectangle{
+    margin: 0 auto;
+    margin-top: 50%;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    background-color: hotpink;
+}
+
+#rectangle img{
+    height: 100%;
+    object-fit:cover ;
+    object-position: center;
+    transform: scale(2);
+}
+
+@media(max-width:450px) {
+    #nav{
+        padding: 0 10px;
+    }
+    #nav a{
+        font-size: 12px;
+    }
+    #nav a:nth-child(2){
+        font-size: 14px;
+    }
+    #back>h1{
+        width: 80%;
+    }
+    #back>h1 span{
+        font-size: 40px;
+    }
+    #l1,#l2,#r1,#r2{
+        visibility: hidden;
+    }
+    #imgs{
+        height: 60vh;
+    }
+    .large{
+        width: 100%;
+    }
+    #back2{
+        padding: 20px 10px;
+    }
+    #back2 h1 {
+        font-size: 40px;
+    }
+    #heading{
+        margin-top: 15px;
+    }
+    #heading h2{
+        font-size: 30px;
+    }
+    #back2content{
+        flex-direction: column;
+        height: 150vh;
+    }
+    #lft2{
+        width: 100%;
+    }
+    #lft2p{
+        width: 90%;
+        font-size: 16px;
+        margin-top: 15px
+    }
+    #lft2p p:nth-child(2) {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    #rght2 {
+        width: 100%;
+    }
+    #rght2 #ellipse{
+        width: 140px;
+        height: 210px;
+    }
+    #back3{
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+    #back3lft{
+        width: 100%;
+        min-height: 60vh;
+    }
+    #back3rght{
+        width: 100%;
+        padding: 10px;
+        min-height: 80vh;
+    }
+    .row .contents h1{
+        font-size: 16px;
+    }
+    .row .contents p{
+        font-size: 12px;
+    }
+    #back3lft #rectangle{
+        margin-top: 20%;
+        width: 150px;
+        height: 250px;
+    }
+
+}
