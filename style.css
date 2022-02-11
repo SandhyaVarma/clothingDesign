@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#left{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(155, 196, 196);
+}
+
+#right{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(224, 118, 245); */
+}
+
+#right img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+#imgoverlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
+
+#imgoverlay1{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 0%;
+    height: 50vh;
+    background-color: #f79393;
+} 
+
+#imgoverlay2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0%;
+    height: 50vh;
+    background-color: #f79393;
+} 
+
+#back>h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 300px;
+    color: #f1f0f0;
+    opacity: .2;
+    z-index: 9999;
+    pointer-events: none;
+
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    z-index: 999;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: #ffff;
+}
+
+#nav a{
+    text-decoration:none;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#itag{
+    margin-right: 50px;
+}
+
+#itag i:nth-child(1){
+    margin-right: 30px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 50px;
+    width: 50%;
+}
+
+#footer a{
+    color: #ffff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+#footer a:nth-child(1){
+    border-bottom: 2px solid #ffff;
+}
+
+#social{
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    transform: translate(0,-50%) rotate(-90deg);
+    transform-origin: bottom;
+}
+
+#social a{
+    color: #ffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+#overlay #center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+#center h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#center h1{
+    font-size: 60px;
+    font-weight: 500;
+}
